@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>page1-sportforlivet</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;500&family=Titillium+Web:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles -->
     <link rel="stylesheet" href="style-page1.css" />
   </head>
   <body>
@@ -18,24 +26,36 @@
             </svg>
             <span class="header-search-description">SØG</span>
           </div>
-          <button class="header-btn" type="button">
+          <button
+            class="header-btn js-open-menu"
+            type="button"
+            aria-expanded="false"
+          >
             <svg class="header-burger-icon" width="40" height="40">
               <use href="./img/sprite.svg#menu-open" />
             </svg>
             <span class="header-burger-description">MENU</span>
           </button>
         </div>
-        <div class="header-menu">
-          <button class="header-menu-btn">
+        <div class="header-menu-container js-menu-container">
+          <button class="header-menu-btn js-close-menu">
             <svg class="cros-icon" width="30" height="30">
               <use href="./img/sprite.svg#menu-close"></use>
             </svg>
           </button>
           <ul class="header-menu-list">
-            <li class="header-menu-item"></li>
-            <li class="header-menu-item"></li>
-            <li class="header-menu-item"></li>
-            <li class="header-menu-item"></li>
+            <li class="header-menu-item">
+              <a class="header-menu-link">Aktivitetsplan</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link">Om os(vision) </a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link">Kontakt </a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link">Privatlivspolitik </a>
+            </li>
           </ul>
         </div>
         <div class="header-logo">
@@ -58,5 +78,7 @@
       </div>
     </header>
     <main></main>
+    <!-- menu script -->
+    <script defer src="./menu.js"></script>
   </body>
 </html>
