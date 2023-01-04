@@ -1,16 +1,4 @@
-:root {
-  --main-text-color: rgb(43, 42, 42);
-  --main-colir: rgba(0, 128, 72, 255);
-  --accent-color: #b9d3c0;
-  --main-font: "Titillium Web";
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 
 img {
   display: block;
@@ -204,3 +192,5 @@ body {
 .header-menu-link:focus {
   color: var(--main-colir);
 }
+
+
